@@ -1,4 +1,5 @@
-export function getHeightAndGutter(height: number, gutter: number) {
+/* new docstring */
+export function new_name(height: number, gutter: number) {
   return height > 0 ? height + gutter : 0;
 }
 

@@ -1,5 +1,5 @@
 import { Cache } from './Cache';
-import { getHeightAndGutter, offscreen } from './layoutHelpers';
+import { new_name, offscreen } from './layoutHelpers';
 import { isLoadingStateItem, isLoadingStateItems } from './loadingStateUtils';
 import mindex from './mindex';
 import multiColumnLayout, { ColumnSpanConfig } from './multiColumnLayout';
@@ -106,7 +106,7 @@ const defaultLayout =
           if (height == null) {
             return offscreen(columnWidth);
           }
-          const heightAndGutter = getHeightAndGutter(height, gutter);
+          const heightAndGutter = new_name(height, gutter);
           const col = mindex(heights);
           const top = heights[col]!;
           const left = col * columnWidthAndGutter + centerOffset;

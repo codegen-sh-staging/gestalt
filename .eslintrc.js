@@ -1,4 +1,4 @@
-const OFF = 'off';
+🌈const OFF = 'off';
 const ERROR = 'error';
 const NEVER = 'never';
 

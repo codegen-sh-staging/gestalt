@@ -1,6 +1,6 @@
 import { Cache } from './Cache';
 import Graph from './Graph';
-import { getHeightAndGutter, offscreen } from './layoutHelpers';
+import { new_name, offscreen } from './layoutHelpers';
 import mindex from './mindex';
 import { GetGraphPositionsReturn, NodeData, Position } from './types';
 
@@ -217,7 +217,7 @@ function getOneColumnItemPositions<T>({
       }
 
       if (height != null) {
-        const heightAndGutter = getHeightAndGutter(height, gutter);
+        const heightAndGutter = new_name(height, gutter);
         const col = mindex(heights);
         const top = heights[col]!;
         const left = col * columnWidthAndGutter + centerOffset;
@@ -282,7 +282,7 @@ function getMultiColItemPosition<T>({
     };
   }
 
-  const heightAndGutter = getHeightAndGutter(height, gutter);
+  const heightAndGutter = new_name(height, gutter);
 
   // Find height deltas for each column as compared to the next column
   const adjacentColumnHeightDeltas = getAdjacentColumnHeightDeltas(heights, columnSpan);

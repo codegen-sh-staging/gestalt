@@ -1,5 +1,5 @@
 import { Cache } from './Cache';
-import { getHeightAndGutter } from './layoutHelpers';
+import { new_name } from './layoutHelpers';
 import { isLoadingStateItem, isLoadingStateItems } from './loadingStateUtils';
 import mindex from './mindex';
 import multiColumnLayout, { ColumnSpanConfig } from './multiColumnLayout';
@@ -77,7 +77,7 @@ const fullWidthLayout = <T>({
               height: Infinity,
             };
           } else {
-            const heightAndGutter = getHeightAndGutter(height, gutter);
+            const heightAndGutter = new_name(height, gutter);
             const col = mindex(heights);
             const top = heights[col];
             const left = col * columnWidthAndGutter + centerOffset;
