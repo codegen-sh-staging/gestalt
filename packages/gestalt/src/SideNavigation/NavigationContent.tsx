@@ -151,10 +151,22 @@ export default function NavigationContent({
           >
             <Flex direction="column" gap={{ column: 4, row: 0 }}>
               {header ? (
-                <Flex direction="column" gap={{ column: 4, row: 0 }}>
-                  <Box width={headerWidth}>{header}</Box>
-                  <Divider />
-                </Flex>
+                <Box 
+                  position="sticky" 
+                  top={0} 
+                  color="default" 
+                  zIndex={new FixedZIndex(2)}
+                  dangerouslySetInlineStyle={{
+                    __style: {
+                      paddingBottom: 8,
+                    },
+                  }}
+                >
+                  <Flex direction="column" gap={{ column: 4, row: 0 }}>
+                    <Box width={headerWidth}>{header}</Box>
+                    <Divider />
+                  </Flex>
+                </Box>
               ) : null}
 
               <ul className={classnames(styles.ulItem)}>{items}</ul>
