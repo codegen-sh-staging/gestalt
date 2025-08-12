@@ -1,4 +1,4 @@
-# [Gestalt](https://gestalt.pinterest.systems/) &middot; [![NPM Version](https://img.shields.io/npm/v/gestalt.svg)](https://www.npmjs.com/package/gestalt) [![License](https://img.shields.io/npm/l/gestalt?style=flat)](https://github.com/pinterest/gestalt/blob/master/LICENSE)
+# [Gestalt](https://gestalt.pinterest.systems/) 🎨 &middot; [![NPM Version](https://img.shields.io/npm/v/gestalt.svg)](https://www.npmjs.com/package/gestalt) [![License](https://img.shields.io/npm/l/gestalt?style=flat)](https://github.com/pinterest/gestalt/blob/master/LICENSE)
 
 Gestalt is Pinterest’s design system. Our system includes a React component library with comprehensive guidelines, best practices, tools, and resources to support designers and engineers delivering a high-quality product.
 
